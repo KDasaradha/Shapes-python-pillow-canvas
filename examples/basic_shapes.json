@@ -1,0 +1,58 @@
+{
+  "canvas_size": [800, 600],
+  "background_color": [255, 255, 255],
+  "line_interval": 50,
+  "line_color": "lightgray",
+  "show_grid": true,
+  "shapes": [
+    {
+      "type": "rectangle",
+      "start": [100, 100],
+      "end": [250, 200],
+      "fill_color": [255, 0, 0],
+      "outline_color": [0, 0, 0],
+      "border_width": 3
+    },
+    {
+      "type": "circle",
+      "center": [400, 150],
+      "radius": 75,
+      "fill_color": [0, 255, 0],
+      "outline_color": [0, 0, 0],
+      "border_width": 3
+    },
+    {
+      "type": "star",
+      "center": [600, 150],
+      "size": 60,
+      "fill_color": [255, 255, 0],
+      "outline_color": [0, 0, 0],
+      "border_width": 2,
+      "num_points": 5
+    },
+    {
+      "type": "heart",
+      "center": [200, 400],
+      "size": 2,
+      "fill_color": [255, 0, 255],
+      "outline_color": [0, 0, 0],
+      "border_width": 2,
+      "rotation_angle": 0
+    },
+    {
+      "type": "straight_line",
+      "start": [50, 500],
+      "end": [750, 500],
+      "fill_color": [0, 0, 255],
+      "border_width": 5
+    },
+    {
+      "type": "dashed_line",
+      "start": [50, 520],
+      "end": [750, 520],
+      "fill_color": [255, 0, 0],
+      "border_width": 3,
+      "dash_length": 15
+    }
+  ]
+}

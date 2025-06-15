@@ -1,0 +1,288 @@
+{
+  "canvas_size": [1200, 1000],
+  "background_color": [255, 255, 255],
+  "show_grid": true,
+  "line_interval": 50,
+  "line_color": "lightgray",
+  "shapes": [
+    {
+      "type": "triangle",
+      "point1": [50, 50],
+      "point2": [100, 50],
+      "point3": [75, 100],
+      "fill_color": [255, 100, 100],
+      "outline_color": [200, 50, 50],
+      "border_width": 2
+    },
+    {
+      "type": "pentagon",
+      "center": [200, 75],
+      "radius": 30,
+      "rotation": 0,
+      "fill_color": [100, 255, 100],
+      "outline_color": [50, 200, 50],
+      "border_width": 2
+    },
+    {
+      "type": "hexagon",
+      "center": [300, 75],
+      "radius": 30,
+      "rotation": 0,
+      "fill_color": [100, 100, 255],
+      "outline_color": [50, 50, 200],
+      "border_width": 2
+    },
+    {
+      "type": "octagon",
+      "center": [400, 75],
+      "radius": 30,
+      "rotation": 0,
+      "fill_color": [255, 255, 100],
+      "outline_color": [200, 200, 50],
+      "border_width": 2
+    },
+    {
+      "type": "rhombus",
+      "center": [500, 75],
+      "width": 60,
+      "height": 40,
+      "rotation": 45,
+      "fill_color": [255, 100, 255],
+      "outline_color": [200, 50, 200],
+      "border_width": 2
+    },
+    {
+      "type": "parallelogram",
+      "start": [550, 50],
+      "width": 60,
+      "height": 40,
+      "skew": 15,
+      "fill_color": [100, 255, 255],
+      "outline_color": [50, 200, 200],
+      "border_width": 2
+    },
+    {
+      "type": "trapezoid",
+      "start": [650, 50],
+      "bottom_width": 60,
+      "top_width": 40,
+      "height": 40,
+      "fill_color": [255, 200, 100],
+      "outline_color": [200, 150, 50],
+      "border_width": 2
+    },
+    {
+      "type": "block_arrow",
+      "start": [50, 150],
+      "end": [150, 150],
+      "shaft_width": 20,
+      "head_width": 40,
+      "fill_color": [255, 0, 0],
+      "outline_color": [150, 0, 0],
+      "border_width": 2
+    },
+    {
+      "type": "curved_arrow",
+      "start": [200, 150],
+      "end": [300, 150],
+      "curve_height": 30,
+      "arrow_size": 15,
+      "fill_color": [0, 255, 0],
+      "border_width": 3
+    },
+    {
+      "type": "circular_arrow",
+      "center": [400, 150],
+      "radius": 40,
+      "start_angle": 0,
+      "end_angle": 270,
+      "arrow_size": 12,
+      "fill_color": [0, 0, 255],
+      "border_width": 3
+    },
+    {
+      "type": "callout_bubble",
+      "center": [600, 150],
+      "width": 80,
+      "height": 50,
+      "pointer_tip": [650, 200],
+      "fill_color": [255, 255, 200],
+      "outline_color": [200, 200, 100],
+      "border_width": 2
+    },
+    {
+      "type": "thought_bubble",
+      "center": [750, 150],
+      "width": 80,
+      "height": 50,
+      "pointer_direction": [800, 200],
+      "fill_color": [200, 255, 255],
+      "outline_color": [100, 200, 200],
+      "border_width": 2
+    },
+    {
+      "type": "banner_ribbon",
+      "start": [900, 125],
+      "width": 100,
+      "height": 50,
+      "tail_length": 20,
+      "fill_color": [255, 200, 200],
+      "outline_color": [200, 100, 100],
+      "border_width": 2
+    },
+    {
+      "type": "flower",
+      "center": [100, 300],
+      "petal_size": 30,
+      "num_petals": 6,
+      "fill_color": [255, 150, 200],
+      "outline_color": [200, 100, 150],
+      "center_color": [255, 255, 0],
+      "border_width": 2
+    },
+    {
+      "type": "butterfly",
+      "center": [250, 300],
+      "wing_size": 40,
+      "fill_color": [255, 200, 0],
+      "outline_color": [200, 150, 0],
+      "body_color": [100, 50, 0],
+      "border_width": 2
+    },
+    {
+      "type": "tree",
+      "base": [400, 350],
+      "height": 80,
+      "crown_width": 60,
+      "trunk_color": [139, 69, 19],
+      "crown_color": [34, 139, 34],
+      "outline_color": [0, 100, 0],
+      "border_width": 2
+    },
+    {
+      "type": "sun",
+      "center": [550, 300],
+      "radius": 30,
+      "num_rays": 12,
+      "ray_length": 20,
+      "fill_color": [255, 255, 0],
+      "outline_color": [255, 200, 0],
+      "border_width": 2
+    },
+    {
+      "type": "moon",
+      "center": [700, 300],
+      "radius": 30,
+      "phase_offset": 30,
+      "fill_color": [255, 255, 224],
+      "outline_color": [200, 200, 150],
+      "border_width": 2
+    },
+    {
+      "type": "lightning_bolt",
+      "start": [800, 250],
+      "height": 80,
+      "width": 40,
+      "fill_color": [255, 255, 0],
+      "outline_color": [255, 200, 0],
+      "border_width": 2
+    },
+    {
+      "type": "oval_callout",
+      "center": [100, 450],
+      "width": 80,
+      "height": 50,
+      "callout_point": [150, 500],
+      "fill_color": [200, 255, 200],
+      "outline_color": [100, 200, 100],
+      "border_width": 2
+    },
+    {
+      "type": "cross",
+      "center": [250, 450],
+      "size": 30,
+      "thickness": 8,
+      "fill_color": [255, 0, 0],
+      "outline_color": [200, 0, 0],
+      "border_width": 2
+    },
+    {
+      "type": "plus_sign",
+      "center": [350, 450],
+      "size": 30,
+      "thickness": 6,
+      "fill_color": [0, 255, 0],
+      "border_width": 3
+    },
+    {
+      "type": "minus_sign",
+      "center": [450, 450],
+      "size": 30,
+      "thickness": 6,
+      "fill_color": [255, 100, 0],
+      "border_width": 3
+    },
+    {
+      "type": "multiplication_sign",
+      "center": [550, 450],
+      "size": 25,
+      "thickness": 5,
+      "fill_color": [150, 0, 255],
+      "border_width": 3
+    },
+    {
+      "type": "spiral",
+      "center": [150, 600],
+      "max_radius": 50,
+      "turns": 4,
+      "fill_color": [255, 100, 150],
+      "border_width": 3
+    },
+    {
+      "type": "helix",
+      "center": [300, 600],
+      "radius": 30,
+      "height": 100,
+      "turns": 3,
+      "fill_color": [100, 150, 255],
+      "border_width": 3
+    },
+    {
+      "type": "sine_wave_pattern",
+      "start": [400, 600],
+      "width": 150,
+      "amplitude": 30,
+      "frequency": 3,
+      "fill_color": [255, 150, 100],
+      "border_width": 3
+    },
+    {
+      "type": "fractal_tree",
+      "base": [700, 650],
+      "height": 60,
+      "levels": 5,
+      "angle": 30,
+      "fill_color": [100, 200, 100],
+      "border_width": 2
+    },
+    {
+      "type": "regular_polygon",
+      "center": [900, 450],
+      "radius": 40,
+      "n_sides": 7,
+      "rotation": 15,
+      "fill_color": [200, 100, 255],
+      "outline_color": [150, 50, 200],
+      "border_width": 2
+    },
+    {
+      "type": "star",
+      "center": [1000, 300],
+      "size": 35,
+      "num_points": 8,
+      "fill_color": [255, 215, 0],
+      "outline_color": [255, 165, 0],
+      "border_width": 2
+    }
+  ]
+}
