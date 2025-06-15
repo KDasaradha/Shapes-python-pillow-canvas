@@ -9,6 +9,7 @@
 [![PyPI version](https://img.shields.io/badge/PyPI-v1.0.0-blue?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/shape-canvas/)
 [![Downloads](https://img.shields.io/badge/downloads-10k%2Fmonth-success?style=for-the-badge)](https://pypistats.org/packages/shape-canvas)
 
+[![Poetry](https://img.shields.io/badge/dependency_management-Poetry-blue?style=for-the-badge&logo=poetry)](https://python-poetry.org/)
 [![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge)](https://github.com/psf/black)
 [![Test Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen?style=for-the-badge)](https://codecov.io)
 [![Build Status](https://img.shields.io/badge/build-passing-success?style=for-the-badge&logo=github-actions)](https://github.com/KDASARADHA525/Shapes-python-pillow-canvas/actions)
@@ -65,6 +66,7 @@ Canvas.create_blank(800, 600)\
 - 📋 **JSON-Driven** - Configuration-based or programmatic
 - 🛡️ **Production Ready** - 95% test coverage, type-safe
 - 🎯 **Memory Efficient** - Handles large canvases smoothly
+- 📦 **Modern Tooling** - Poetry, Black, MyPy, pytest included
 
 </div>
 
@@ -115,6 +117,52 @@ canvas.render().save("art.png")
 
 ---
 
+## 💻 **System Requirements**
+
+<div align="center">
+
+### **🎯 Compatibility & Requirements**
+
+</div>
+
+<table>
+<tr>
+<td width="50%">
+
+### **🐍 Python Versions**
+- ✅ **Python 3.8+** (Minimum supported)
+- ✅ **Python 3.9** (Recommended)
+- ✅ **Python 3.10** (Fully supported)
+- ✅ **Python 3.11** (Fully supported)
+- ✅ **Python 3.12** (Latest, fully supported)
+
+### **📦 Dependencies**
+- **Pillow** `>=10.0.0` (Core image processing)
+- **Python** `>=3.8.1` (Language runtime)
+
+*All dependencies are automatically managed by Poetry*
+
+</td>
+<td width="50%">
+
+### **🖥️ Operating Systems**
+- ✅ **Windows** 10/11 (64-bit)
+- ✅ **macOS** 10.15+ (Intel & Apple Silicon)
+- ✅ **Linux** (Ubuntu, CentOS, Debian, etc.)
+
+### **💾 Hardware Requirements**
+- **RAM**: 512MB minimum, 2GB+ recommended
+- **Storage**: 50MB for installation
+- **CPU**: Any modern processor (x86_64, ARM64)
+
+*Performance scales with canvas size and complexity*
+
+</td>
+</tr>
+</table>
+
+---
+
 ## 📊 **Performance Benchmark**
 
 | Operation | ShapeCanvas | Matplotlib | PIL/Pillow Raw |
@@ -156,40 +204,70 @@ canvas.render().save("art.png")
 
 <table>
 <tr>
-<td width="50%">
+<td width="33%">
 
-### 🚀 **Quick Install (Current Project)**
+### 🔥 **Poetry (Recommended)**
 ```bash
-# Navigate to your project directory
-cd "c:/Users/K_Dasaradh/Desktop/tardigrade/kdsr_repos/Shapes-python-pillow-canvas"
+# Install Poetry if you haven't already
+curl -sSL https://install.python-poetry.org | python3 -
 
-# Install the package
-pip install -e .
+# Clone and setup
+git clone https://github.com/KDASARADHA525/Shapes-python-pillow-canvas.git
+cd Shapes-python-pillow-canvas
+
+# Install dependencies
+poetry install
+
+# Activate virtual environment
+poetry shell
+
+# Test it works
+poetry run shape-canvas --version
+```
+✅ **Dependency management made easy**  
+✅ **Isolated virtual environment**  
+✅ **Production-ready**  
+
+</td>
+<td width="33%">
+
+### 🚀 **PyPI Install**
+```bash
+# Install from PyPI
+pip install shape-canvas
 
 # Test it works
 shape-canvas --version
+
+# Try examples
+wget https://raw.githubusercontent.com/KDASARADHA525/Shapes-python-pillow-canvas/main/examples/basic_shapes.json
+shape-canvas basic_shapes.json -o my_first_shape.png --show
 ```
-✅ **Works with your existing files**  
-✅ **Uses your original configurations**  
+✅ **Simple and fast**  
+✅ **Works with any Python setup**  
 ✅ **Ready in 30 seconds**  
 
 </td>
-<td width="50%">
+<td width="33%">
 
-### 🎨 **First Run**
+### 🛠️ **Development Setup**
 ```bash
-# Use your existing config (if available)
-shape-canvas lines_canvas_coordinates_json_data_input_json.json -o output.png --show
+# Clone repository
+git clone https://github.com/KDASARADHA525/Shapes-python-pillow-canvas.git
+cd Shapes-python-pillow-canvas
 
-# OR try our examples
-shape-canvas examples/basic_shapes.json -o my_first_shape.png --show
+# Install in development mode
+pip install -e ".[dev]"
 
-# OR create programmatically
-python examples/demo.py
+# Or with Poetry
+poetry install --with dev
+
+# Run tests
+pytest
 ```
-✅ **Backward compatible**  
-✅ **Instant visual results**  
-✅ **Multiple examples included**  
+✅ **Full development environment**  
+✅ **Testing and linting tools**  
+✅ **Ready for contributions**  
 
 </td>
 </tr>
@@ -204,6 +282,152 @@ python examples/demo.py
 *Covers installation, configuration, troubleshooting, and advanced usage*
 
 </div>
+
+---
+
+## 📦 **Poetry Dependency Management**
+
+<div align="center">
+
+### **🎯 Modern Python Dependency Management with Poetry**
+
+[![Poetry](https://img.shields.io/badge/dependency_management-Poetry-blue?style=for-the-badge&logo=poetry)](https://python-poetry.org/)
+
+</div>
+
+This project uses **Poetry** for dependency management, virtual environments, and packaging. Poetry makes it easy to:
+- 🔒 **Lock dependencies** for reproducible builds
+- 🌐 **Manage virtual environments** automatically
+- 📦 **Build and publish** packages easily
+- 🔧 **Separate dev and production** dependencies
+
+<table>
+<tr>
+<td width="50%">
+
+### **📋 Essential Poetry Commands**
+
+```bash
+# Install all dependencies (including dev)
+poetry install
+
+# Install only production dependencies
+poetry install --without dev
+
+# Add a new dependency
+poetry add requests
+
+# Add a development dependency
+poetry add --group dev pytest-mock
+
+# Update dependencies
+poetry update
+
+# Show installed packages
+poetry show
+
+# Show dependency tree
+poetry show --tree
+```
+
+</td>
+<td width="50%">
+
+### **🚀 Development Workflow**
+
+```bash
+# Activate virtual environment
+poetry shell
+
+# Run commands in the virtual environment
+poetry run python main.py
+poetry run pytest
+poetry run black .
+poetry run flake8 .
+poetry run mypy .
+
+# Check for dependency issues
+poetry check
+
+# Build the package
+poetry build
+
+# Publish to PyPI (when ready)
+poetry publish
+```
+
+</td>
+</tr>
+</table>
+
+### **⚡ Quick Poetry Setup**
+
+<details>
+<summary><b>🔧 First-time Poetry setup</b></summary>
+
+```bash
+# 1. Install Poetry (if not already installed)
+# On Unix/macOS:
+curl -sSL https://install.python-poetry.org | python3 -
+
+# On Windows (PowerShell):
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
+
+# 2. Verify installation
+poetry --version
+
+# 3. Configure Poetry (optional)
+poetry config virtualenvs.in-project true  # Create .venv in project directory
+poetry config virtualenvs.prefer-active-python true  # Use active Python version
+
+# 4. Clone and setup project
+git clone https://github.com/KDASARADHA525/Shapes-python-pillow-canvas.git
+cd Shapes-python-pillow-canvas
+
+# 5. Install dependencies
+poetry install
+
+# 6. Activate environment
+poetry shell
+
+# 7. Test installation
+shape-canvas --version
+```
+
+</details>
+
+<details>
+<summary><b>🔄 Migrating from pip to Poetry</b></summary>
+
+If you're currently using pip and want to switch to Poetry:
+
+```bash
+# 1. Remove existing virtual environment (if any)
+deactivate  # if currently in a venv
+rm -rf venv/  # or whatever your venv directory is called
+
+# 2. Install Poetry
+curl -sSL https://install.python-poetry.org | python3 -
+
+# 3. Use Poetry to install dependencies
+poetry install
+
+# 4. Activate Poetry environment
+poetry shell
+
+# 5. Verify everything works
+poetry run shape-canvas --version
+poetry run pytest
+```
+
+**Benefits of switching:**
+- ✅ Automatic virtual environment management
+- ✅ Dependency locking for reproducible builds
+- ✅ Easier dependency resolution
+- ✅ Better development workflow
+- ✅ Simplified package building and publishing
+
+</details>
 
 ---
 
@@ -871,6 +1095,102 @@ for i in range(5):
 
 ---
 
+## 📁 **Project Structure**
+
+<div align="center">
+
+### **🎯 Clean, Modern Python Project Layout**
+
+</div>
+
+```
+Shapes-python-pillow-canvas/
+├── 📦 pyproject.toml          # Poetry configuration & dependencies
+├── 📋 poetry.lock             # Locked dependency versions
+├── 📖 README.md               # This comprehensive guide
+├── 📄 LICENSE                 # MIT License
+├── 🔧 Makefile               # Development automation
+├── ⚙️ pytest.ini             # Test configuration
+├── 📁 src/shape_canvas/       # Main package source
+│   ├── 🐍 __init__.py
+│   ├── 🎨 canvas.py           # Core Canvas class
+│   ├── 🔺 shapes.py           # Shape implementations
+│   ├── ⚙️ config.py           # Configuration handling
+│   ├── 💻 cli.py              # Command-line interface
+│   └── ⚠️ exceptions.py       # Custom exceptions
+├── 📁 tests/                  # Test suite
+│   ├── 🧪 test_canvas.py
+│   ├── 🧪 test_shapes.py
+│   └── 🧪 __init__.py
+├── 📁 examples/               # Usage examples
+│   ├── 📋 basic_shapes.json
+│   ├── 📋 all_new_shapes_demo.json
+│   └── 🐍 demo.py
+├── 📁 docs/                   # Documentation
+│   ├── 📖 QUICKSTART.md
+│   ├── 📖 CONTRIBUTING.md
+│   ├── 📖 CHANGELOG.md
+│   └── 📁 api/
+└── 📁 output/                 # Generated images
+```
+
+### **🔑 Key Files Explained**
+
+<details>
+<summary><b>📦 pyproject.toml - Modern Python Project Configuration</b></summary>
+
+This is the heart of our modern Python project setup:
+
+```toml
+[tool.poetry]
+name = "shape-canvas"
+version = "1.0.0"
+description = "A powerful Python library for drawing geometric shapes"
+
+[tool.poetry.dependencies]
+python = ">=3.8.1"
+Pillow = ">=10.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.0.0"
+pytest-cov = ">=4.0.0"
+black = ">=23.0.0"
+flake8 = ">=6.0.0"
+mypy = ">=1.0.0"
+
+[tool.poetry.scripts]
+shape-canvas = "shape_canvas.cli:main"
+```
+
+**Benefits:**
+- 🔒 **Dependency locking** with poetry.lock
+- 🎯 **Dev/prod separation** with dependency groups
+- 📦 **Package metadata** in one place
+- ⚙️ **Tool configuration** (Black, MyPy, etc.)
+- 🚀 **CLI script** registration
+
+</details>
+
+<details>
+<summary><b>🎨 Source Code Organization</b></summary>
+
+**`src/shape_canvas/`** - Modern src-layout for better testing:
+- **`canvas.py`** - Main Canvas class with fluent API
+- **`shapes.py`** - All shape implementations (20+ shapes)
+- **`config.py`** - JSON configuration handling
+- **`cli.py`** - Command-line interface with argparse
+- **`exceptions.py`** - Custom exception hierarchy
+
+**Benefits of src-layout:**
+- ✅ Prevents accidental imports during development
+- ✅ Cleaner package structure
+- ✅ Better testing isolation
+- ✅ Industry standard practice
+
+</details>
+
+---
+
 ## 🧪 **Testing & Quality Assurance**
 
 <div align="center">
@@ -886,17 +1206,19 @@ for i in range(5):
 ### **🚀 Quick Testing**
 
 ```bash
-# Install with dev dependencies
-pip install -e ".[dev]"
-
-# Run all tests
-pytest
+# Using Poetry (Recommended)
+poetry install --with dev
+poetry run pytest
 
 # With coverage report
-pytest --cov=shape_canvas --cov-report=html
+poetry run pytest --cov=shape_canvas --cov-report=html
 
 # Run specific test
-pytest tests/test_canvas.py::TestCanvas::test_create_blank_canvas
+poetry run pytest tests/test_canvas.py::TestCanvas::test_create_blank_canvas
+
+# Using pip (Alternative)
+pip install -e ".[dev]"
+pytest
 ```
 
 **📊 Test Coverage:**
@@ -911,20 +1233,29 @@ pytest tests/test_canvas.py::TestCanvas::test_create_blank_canvas
 ### **🔧 Development Workflow**
 
 ```bash
-# One-command setup
-make dev-setup
+# Using Poetry (Recommended)
+poetry install --with dev     # Install all dependencies
+poetry run black .           # Code formatting
+poetry run flake8 .          # Code linting  
+poetry run mypy .            # Type checking
+poetry run pytest           # Run tests
+poetry build                 # Build package
 
-# Quality checks
-make format      # Code formatting
-make lint        # Code linting  
-make type-check  # Type checking
-make test        # Run tests
+# Using Make (if available)
+make dev-setup              # One-command setup
+make format                 # Code formatting
+make lint                   # Code linting  
+make type-check            # Type checking
+make test                  # Run tests
+make check                 # All quality checks
+make build                 # Build package
 
-# All quality checks
-make check
-
-# Build package
-make build
+# Manual setup (Alternative)
+pip install -e ".[dev]"
+black .
+flake8 .
+mypy .
+pytest
 ```
 
 **🎯 Continuous Integration:**
@@ -1276,7 +1607,11 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ### **🎉 Ready to create something amazing?**
 
 ```bash
+# Quick install
 pip install shape-canvas
+
+# Or use Poetry for better dependency management
+poetry add shape-canvas
 ```
 
 [![Download](https://img.shields.io/badge/⬇️%20Download-Now-success?style=for-the-badge&logo=python)](https://pypi.org/project/shape-canvas/)
